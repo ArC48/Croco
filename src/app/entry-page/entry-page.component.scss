@@ -1,0 +1,166 @@
+.btn-div {
+    text-align: center;
+    width: 200px;
+    min-height: 100px;
+    // min-height: 100px;
+    // max-height: 100px;
+    max-width: 100px;
+    border: 1px solid #333;
+    border-radius: 13px;
+    background-color: #fff;
+    transition: all 350ms ease-out;
+    p {
+        color: black;
+        text-align: center;
+    }
+    &:hover {
+        background-image: url("https://assets.website-files.com/6139c2cc6e06c51c1548b8b8/613f5392472a83823dd9c2b9_ptrn.png");
+        background-size: cover;
+        background-color: #fff;
+        border-radius: 0;
+        background-repeat: no-repeat;
+        box-shadow: 0 0 50px 0 #4f7034;
+        cursor: pointer;
+    p {
+        font-size: larger;
+        transition: font-size 100ms ease;
+    }
+    }
+}
+
+.header-main {
+    width: 100%;
+    height: 3.3rem;
+    cursor: pointer;
+    // overflow: hidden;
+
+}
+
+.logo {
+    height: 100%;
+    width: 20%;
+    background-image: url('https://assets.website-files.com/613f38d1fdc0062c11210945/61530249d2ce58cc13f4232c_cb_1.svg');
+    background-repeat: no-repeat;
+    margin: .5rem;
+    fill: #333;
+    transition: height 200ms ease-in-out;
+    cursor: pointer;
+    &:hover {
+        height: 15%;
+        
+    }
+    h2 {
+        color: #ebebeb00;
+        margin: 0;
+        font-size: 50px;
+        cursor: pointer;
+        // height: 2rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    h2:hover {
+        position: relative;
+        font-size: 30px;
+        color: #ebebeb;
+        // display: none;
+        -webkit-text-stroke: 0.03vw #a8a8a8;
+        &::before{
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            color: #15af44;
+            // -webkit-text-stroke: 0.03vw #a8a8a8;
+            // border-right: 2px solid #15af44;
+            overflow: hidden;
+            animation: animate 2s ease-in-out;
+
+            @keyframes animate {
+                0%, 100%{
+                    width: 0;
+                    border-right: 0;
+                }
+                1% {
+                    border-right: 2px solid #15af44;
+                }
+                50% {
+                    width: 100%;
+                }
+                99% {
+                    border-right: 2px solid #15af44;
+                }
+            }
+        }
+    }
+}
+
+.main-container {
+    height: 80%;
+    width: 100%;
+    display: inline-block;
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .main-pic {
+        height: 435px;
+        width: 300px;
+        filter: grayscale(100%);
+        transition: all 500ms ease-in-out;
+        margin: 10px;
+        opacity: 0.7;
+        &:hover {
+            filter: grayscale(0);
+            cursor: pointer;
+            height: 450px;
+            width: 312px;
+            opacity: 1;
+            box-shadow: 
+            0 0 0px rgba(255, 255, 255, 0.712),
+            0 0 2px rgba(255, 255, 255, 0.692),
+            0 0 5px rgba(255, 255, 255, 0.705),
+            0 0 20px rgba(226, 226, 226, 0.966),
+            0 0 22px rgba(201, 201, 201, 0.575),
+            0 0 26px rgba(180, 180, 180, 0.336),
+            0 0 35px rgba(112, 112, 112, 0.349),
+            0 0 42px rgba(83, 83, 83, 0.329);
+        }
+    }
+}
+
+.paragraph-div {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    & a {
+        text-decoration: none;
+        text-align: center;
+        color: #15af44;
+        & p {
+            font-family: 'Abel', sans-serif;
+            font-size: 2rem;
+            text-transform: uppercase;
+            transition: color, font-size 200ms ease-in-out;
+            color: #f5f5f5;
+            text-shadow: 
+            1px 1px 1px #919191,
+            1px 2px 1px #919191,
+            1px 3px 1px #919191,
+            1px 4px 1px #919191,
+            1px 5px 1px #919191,
+            1px 5px 3px rgba(16,16,16,0.4),
+            1px 8px 6px rgba(16,16,16,0.2),
+            1px 10px 9px rgba(16,16,16,0.2),
+            1px 13px 12px rgba(16,16,16,0.4);
+            &:hover {
+                color: #15af44;
+                font-size: 2.1rem;
+            }
+        }
+    }
+}
+
+
+
