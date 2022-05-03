@@ -2,6 +2,7 @@
 <div class="bg">
     <h1>Employees</h1>
     <div class="container">
+        <!-- iterate over users' buttons asynchronously to get their names on buttons by their ids  -->
         <div class="inner-div" *ngFor="let user of (users | async)">
             <button type="button" class="btn" (click)="goToUserPage(user.id)">
                 {{user.username}}

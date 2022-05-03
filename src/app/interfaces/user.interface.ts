@@ -1,4 +1,4 @@
-// user's interface with all the properties
+// user's interface with all its properties
 export interface user {
     id: number;
     name: string;

@@ -11,5 +11,5 @@ export class EntryPageComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  // sorry, this page didn't require any logic :/
 }
