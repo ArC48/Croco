@@ -8,7 +8,7 @@ import { UserInfoComponent } from './user-info/user-info.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'entryPage',
+    redirectTo: 'dashboard',
     pathMatch: 'full'
   },
   {

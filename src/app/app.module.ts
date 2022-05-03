@@ -7,6 +7,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { EntryPageComponent } from './entry-page/entry-page.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { EntryPageComponent } from './entry-page/entry-page.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
