@@ -1,0 +1,27 @@
+<div class="main-container">
+    <div class="topbar">
+        <a [routerLink]="'/dashboard'">Dashboard</a>
+        <a [routerLink]="'/entryPage'">Entry Page</a>
+    </div>
+    <div class="content-card" *ngFor="let post of (currentUserPosts | async)">
+        <div class="blog-post">
+            <div class="blog-post__img">
+                <img src="../../assets/img/posts-img.jpg" alt="">
+            </div>
+            <div class="blog-post__info">
+                <div class="blog-post__date">
+                    <span>Tuesday</span>
+                    <span>May 3 2022</span>
+                </div>
+                <h1 class="blog-post__title">
+                    {{post.title}}
+                </h1>
+                <p class="blog-post__text">
+                    {{post.body}}
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+</div>

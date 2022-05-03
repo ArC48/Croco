@@ -12,17 +12,22 @@ export class UsersService {
 
     getUsers() {
         return this._http.get<any>('https://jsonplaceholder.typicode.com/users')
-        .pipe(map((res: any)=>{
+        .pipe(map((res: any) => {
             return res;
         }))
     }
 
-    // getUserId(id: number) {
-    //     return this._httpClient.get<any>(`https://jsonplaceholder.typicode.com/users/${id}`)
-    //     .pipe(map((res: any) => {
-    //         return res
-    //     }))
-    // };
+    getUserId(id: number) {
+        return this._http.get<any>(`https://jsonplaceholder.typicode.com/users/${id}`)
+        .pipe(map((res: any) => {
+            return res
+        }))
+    };
 
-    //posts left here 
+    getUserPosts(id: number) {
+        return this._http.get<any>(`https://jsonplaceholder.typicode.com/posts?postId=${id}`)
+        .pipe(map((res: any) => {
+            return res
+        }))
+    }
 }

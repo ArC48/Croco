@@ -12,11 +12,14 @@ export class DashboardComponent implements OnInit {
 
   public users!: Observable<any>
 
-  constructor(private usersService: UsersService) { }
+  constructor(private usersService: UsersService, private router: Router) { }
 
   ngOnInit(): void {
     this.users = this.usersService.getUsers();
-    console.log(this.users)
+  }
+
+  goToUserPage(userId: number) {
+    this.router.navigate(['userInfo', userId])
   }
 
 }

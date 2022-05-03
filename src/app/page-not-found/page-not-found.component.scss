@@ -1,0 +1,16 @@
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    a {
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+    h1, a {
+        padding-top: 2rem;
+        font-family: 'Abel', sans-serif;
+    }
+}
+
